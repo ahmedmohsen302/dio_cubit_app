@@ -32,11 +32,19 @@ class HomeView extends StatelessWidget {
                           return FadeInLeft(
                             delay: Duration(milliseconds: 100 * index),
                             child: ListTile(
-                              leading: CircleAvatar(
-                                  backgroundColor: Colors.blue,
-                                  child: Text(state.data[index].id.toString())),
-                              title: Text(state.data[index].title),
-                              subtitle: Text(state.data[index].body),
+                              leading: BounceInDown(
+                                delay: Duration(milliseconds: 100 * index),
+                                child: CircleAvatar(
+                                    backgroundColor: Colors.blue,
+                                    child:
+                                        Text(state.data[index].id.toString())),
+                              ),
+                              title: SlideInLeft(
+                                  delay: Duration(milliseconds: 100 * index),
+                                  child: Text(state.data[index].title)),
+                              subtitle: ElasticInRight(
+                                  delay: Duration(milliseconds: 100 * index),
+                                  child: Text(state.data[index].body)),
                             ),
                           );
                         },
