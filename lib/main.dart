@@ -5,7 +5,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'cubit/home_cubit_cubit.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    BlocProvider(
+      create: (context) => HomeCubitCubit()..getHomeData(), // Initialize cubit
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -15,10 +20,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: BlocProvider(
-          create: (context) => HomeCubitCubit()..getHomeData(),
-          child: const HomeView(),
-        ));
+        debugShowCheckedModeBanner: false, home: const HomeView());
   }
 }

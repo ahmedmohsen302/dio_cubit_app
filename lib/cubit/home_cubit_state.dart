@@ -7,7 +7,7 @@ final class HomeCubitInitial extends HomeCubitState {}
 final class HomeCubitLoading extends HomeCubitState {}
 
 final class HomeCubitLoaded extends HomeCubitState {
-  final List<DataModel> data;
+  final List<dataModel> data;
 
   HomeCubitLoaded(this.data);
 }

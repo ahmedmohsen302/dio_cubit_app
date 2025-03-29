@@ -1,0 +1,2 @@
+D:/KIRA/Flutter course/Flutter/dio_cubit_app/android/app/.cxx/Debug/4x2b5i67/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/KIRA/Flutter course/Flutter/dio_cubit_app/android/app/.cxx/Debug/4x2b5i67/armeabi-v7a/CMakeFiles/rebuild_cache.dir
